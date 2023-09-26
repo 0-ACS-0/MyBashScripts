@@ -60,9 +60,9 @@ then
 	then
 		# Cleaning the actual workspace
 		echo -e "\n[AUTOLATEX-CLEAN]: Cleaning workspace..."
-		echo "[AUTOLATEX-CLEAN]: Removing auxiliar latex file $1.aux..."
+		echo "[AUTOLATEX-CLEAN]: Removing auxiliar latex file $FILE_NAME.aux..."
 		rm "$FILE_NAME.aux"
-		echo "[AUTOLATEX-CLEAN]: Removing log latex file $1.log..."
+		echo "[AUTOLATEX-CLEAN]: Removing log latex file $FILE_NAME.log..."
 		rm "$FILE_NAME.log"
 		echo -e "\n Workspace cleaned!"
 	fi
@@ -72,9 +72,9 @@ if [[ $# -eq 2 ]]
 then
 	# Cleaning the actual workspace
 	echo -e "\n[AUTOLATEX-CLEAN]: Cleaning workspace..."
-	echo "[AUTOLATEX-CLEAN]: Removing auxiliar latex file $1.aux..."
+	echo "[AUTOLATEX-CLEAN]: Removing auxiliar latex file $FILE_NAME.aux..."
 	rm "$FILE_NAME.aux"
-	echo "[AUTOLATEX-CLEAN]: Removing log latex file $1.log..."
+	echo "[AUTOLATEX-CLEAN]: Removing log latex file $FILE_NAME.log..."
 	rm "$FILE_NAME.log"
 	echo -e "\n Workspace cleaned!"
 fi
